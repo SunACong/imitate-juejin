@@ -47,20 +47,20 @@ public class ArticleInfoServiceImpl extends ServiceImpl<ArticleInfoMapper, Artic
         Page<ArticleInfo> page = new Page<>(current, limit);
         articleInfoMapper.selectPage(page, null);
         List<ArticleInfo> articleInfos = null;
-        //if (page.getRecords().size() < limit) {
-        //    // 不足limit条记录的时候
-        //    // 随机查连续limit条记录
-        //    QueryWrapper<ArticleInfo> wrapper = new QueryWrapper<>();
-        //    Integer count = articleInfoMapper.selectCount(null);
-        //    // 生成一个随机数。范围为 0 —— （count - limit）
-        //    int random = (int)(Math.random() * (count - limit));
-        //    wrapper.last("limit "+ 1 +"," + 1);
-        //    articleInfos = articleInfoMapper.selectList(wrapper);
-        //} else {
-        //    // 足够
-        //    articleInfos = page.getRecords();
-        //}
-        articleInfos = page.getRecords();
+        if (page.getRecords().size() < limit) {
+            // 不足limit条记录的时候
+            // 随机查连续limit条记录
+            QueryWrapper<ArticleInfo> wrapper = new QueryWrapper<>();
+            Integer count = articleInfoMapper.selectCount(null);
+            // 生成一个随机数。范围为 0 —— （count - limit）
+            int random = (int)(Math.random() * (count - limit));
+            wrapper.last("limit "+ 1 +"," + 1);
+            articleInfos = articleInfoMapper.selectList(wrapper);
+        } else {
+            // 足够
+            articleInfos = page.getRecords();
+        }
+        //articleInfos = page.getRecords();
         // 根据userId查作者
         // 根据tagId查tag
         for (ArticleInfo article : articleInfos) {
