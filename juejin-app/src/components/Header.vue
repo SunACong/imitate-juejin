@@ -94,7 +94,7 @@
                                     </li>
                                     <li>
                                         <div class="user">
-                                            <img src="../assets/img//user.png" alt="" class="user__img">
+                                            <img src="../assets/img/user.png" alt="" class="user__img">
                                         </div>
                                     </li>
                                 </ul>

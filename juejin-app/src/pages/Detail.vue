@@ -229,7 +229,7 @@
         </div>
       </div>
   </div>
-</template>
+</template> 
 
 <script>
     import '../assets/css/article.css'
