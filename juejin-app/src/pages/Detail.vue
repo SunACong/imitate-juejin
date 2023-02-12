@@ -42,10 +42,10 @@
                     <el-skeleton :rows="4" animated style="width:700px" class="listSkeleton" v-if="loading" />
 
                     <!-- 文章主体内容 -->
-                    <div class="article-content" ref="articleBox">
+                    <div class="article-content" ref="articleBox" style="overflow:hidden;">
                         <Viewer class="viewer" :tabindex="2" :value="value" :plugins="plugins"></Viewer>
                     </div>
-                    
+                     
                     <!-- 文章标签区域 -->
                     <div class="tag-list-box">
                         <div class="list" v-if="firstTag">分类：
