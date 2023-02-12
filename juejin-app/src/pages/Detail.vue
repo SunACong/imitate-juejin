@@ -33,7 +33,7 @@
                         <button class="follow-btn">+ 关注</button>
                     </div>
 
-                    <!-- 文章图片展示（可能没有） -->
+                    <!-- 文章图片展示（可能没有） --> 
                     <div v-if="articleDetail.coverImage" class="article-img">
                         <img :src="articleDetail.coverImage" alt="">
                     </div>
@@ -97,11 +97,11 @@
                                 <div class="comment-content">
                                     <div class="comment-main">
                                         <div class="user-box">
-                                            <span class="name">青山绿水长流</span>
+                                            <span class="name">ACongSun</span>
                                             <span class="level"><img src="../assets/img/lv-2.png" alt=""></span>
                                             <span class="jueyou-level"><img src="../assets/img/jy.png" alt=""></span>
                                             <span class="position">前端开发</span>
-                                            <span class="time">1个月</span>
+                                            <span class="time">2个月</span>
                                         </div>
                                         <div class="content-main">高级程序员的表现形式</div>
                                         <div class="comment-action-box">
@@ -135,11 +135,11 @@
                                 <div class="comment-content">
                                     <div class="comment-main">
                                         <div class="user-box">
-                                            <span class="name">青山绿水长流</span>
+                                            <span class="name">ACongSun</span>
                                             <span class="level"><img src="../assets/img/lv-2.png" alt=""></span>
                                             <span class="jueyou-level"><img src="../assets/img/jy.png" alt=""></span>
-                                            <span class="position">移动端开发</span>
-                                            <span class="time">1个月</span>
+                                            <span class="position">前端开发</span>
+                                            <span class="time">2个月</span> 
                                         </div>
                                         <div class="content-main">高级程序员的表现形式</div>
                                         <div class="comment-action-box">
