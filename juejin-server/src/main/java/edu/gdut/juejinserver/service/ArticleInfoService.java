@@ -7,14 +7,7 @@ import edu.gdut.juejinserver.vo.ArticleInfoVo;
 
 import java.util.List;
 
-/**
- * <p>
- *  服务类
- * </p>
- *
- * @author Trust会长
- * @since 2022-07-30
- */
+
 public interface ArticleInfoService extends IService<ArticleInfo> {
 
     /**

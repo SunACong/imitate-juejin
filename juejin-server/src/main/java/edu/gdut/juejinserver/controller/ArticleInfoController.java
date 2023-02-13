@@ -6,14 +6,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
-/**
- * <p>
- *  前端控制器
- * </p>
- *
- * @author Trust会长
- * @since 2022-07-30
- */
 @RestController
 @RequestMapping("/juejinserver/index_data")
 @CrossOrigin
