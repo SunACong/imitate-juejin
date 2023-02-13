@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * 文章数据
+ * 文章数据类
  */
 @Data
 public class ArticleInfoVo {

@@ -2,6 +2,9 @@ package edu.gdut.juejinserver.vo;
 
 import lombok.Data;
 
+/**
+ * 文章详情类
+ */
 @Data
 public class ArticleDetailVo {
 
