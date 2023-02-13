@@ -8,3 +8,4 @@ public class ResultCode {
     public static final int ERROR = 2001;
 
 }
+
