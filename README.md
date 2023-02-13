@@ -2,7 +2,7 @@
 
 ## 运行教程
 
-### 前端（imitate-juejin文件夹）
+### 前端（juejin-app文件夹）
 ```
 // 前端目录
 cd juejin
@@ -17,17 +17,7 @@ npm run serve
 
 本地：http://localhost:8080
 
-### 后端（imitate-juejin-java文件夹）
-```
-// 前端目录
-cd juejin
-
-// 安装依赖
-npm install
-
-// 启动服务
-npm run serve
-```
+### 后端（juejin-serve文件夹）
 
 
 
