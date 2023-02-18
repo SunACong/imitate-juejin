@@ -470,7 +470,7 @@
 
                 promise.then(resp=>{
                     this.value = result;
-                }).then(resp=>{
+                }).then(resp=>{ 
                     // 得到文章目录列表
                     let self = this;
                     setTimeout(() => {
