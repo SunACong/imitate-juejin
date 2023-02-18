@@ -1,6 +1,5 @@
 <template>
     <div class="page__header">
-        
         <div class="page__header__box activeBox" ref="headerBox">
             <!-- 导航内容 -->
             <div class="page__header__nav">
@@ -18,19 +17,12 @@
                                     <li><a href="#">沸点</a></li>
                                     <li><a href="#">课程</a></li>
                                     <li><a href="#">直播</a></li>
-                                    <li><a href="#">资讯</a></li>
                                     <li><a href="#">活动</a></li>
-                                    <li class="com">
-                                        <a href="#" class="community">开放社区</a>
-                                        <ul class="community__list">
-                                            <li class="item">
-                                                <span>青训营社区</span>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="#">竞赛</a></li>
                                     <li><a href="#">商城</a></li>
                                     <li><a href="#">APP</a></li>
                                     <li><a href="#">插件</a></li>
+                                    <li><a href="#"><img class="five__img" src="../assets/img/five.png" alt=""></a></li>
                                 </ul>
                             </div>
                         </li>
@@ -62,7 +54,7 @@
                                     </li>
                                     <li>
                                         <div class="creator">
-                                            <button class="crea-btn">创作者中心</button>
+                                            <button class="crea-btn" @click="changeColor()">创作者中心</button>
                                             <input type="checkbox" id="dianj">
                                             <!-- 利用input单选框的单点‘开关’的特性 -->
                                             <label for="dianj">
@@ -216,9 +208,9 @@
                 }
             },
             pushMsg(){
-            	// 通过事件总线发送消息
+                // 通过事件总线发送消息
                 eventBus.$emit('pushMsg',this.headerNavSign)
-            }
+            } 
         },
         mounted () {
             const self = this;
@@ -239,5 +231,11 @@
 </script>
 
 <style scoped>
-
+    .five__img{
+        width: 115px;
+        height: 40px;
+    }
+    .input{
+        width: 262px;           
+    }
 </style>
