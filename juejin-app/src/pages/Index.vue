@@ -28,11 +28,11 @@
                                             <ul>
                                                 <li><a href="">{{article.userName}}</a></li>
                                                 <li><a href="" >{{article.mtime}}</a></li>
-                                                <li class="tag__a">
-                                                    <div class="tag__name" v-for="(tag, index) in article.tagNames" :key="index">
-                                                        <a href="">{{tag}}</a>
+                                                <!-- <li class="tag__a">
+                                                    <div class="tag__name" v-for="index in showList.length" :key="index">
+                                                        <a href="">字节跳动{{article.articleId}}号</a>
                                                     </div>
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </div>
                                     </div>
